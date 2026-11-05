@@ -1,10 +1,9 @@
+.venv/
+.tmp/
+__pycache__/
+*.pyc
+*.log
 .env
 .env.*
-!.env.example
-.venv
-.tmp
-__pycache__
-**/__pycache__
-*.log
-.git
-private
+private/
+.git/
