@@ -1,10 +1,10 @@
-FROM python:3.14-slim
-ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HOST=0.0.0.0 PORT=8000
+# Hosted image for 「도서관 산책 읽기전용」 MCP server. No secrets are baked in.
+FROM python:3.12-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 PORT=8080
 WORKDIR /app
-COPY requirements.lock.txt ./
-RUN pip install --no-cache-dir -r requirements.lock.txt
-COPY server.py planner.py providers.py ./
-COPY data/ ./data/
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
 USER 10001:10001
-EXPOSE 8000
-CMD ["python", "server.py"]
+EXPOSE 8080
+CMD ["python", "main.py"]
