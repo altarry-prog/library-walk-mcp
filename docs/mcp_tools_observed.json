@@ -1,0 +1,249 @@
+[
+  {
+    "name": "get_data_status",
+    "description": "먼저 호출. 자료 범위·모의 여부·연결 상태만 반환. 외부 API 호출 없음.",
+    "inputSchema": {
+      "properties": {},
+      "title": "get_data_statusArguments",
+      "type": "object"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "search_resources",
+    "description": "등록된 고정자료 검색. kind는 books/programs/spaces. 실제 외부 검색과 다름.",
+    "inputSchema": {
+      "properties": {
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "region": {
+          "default": "",
+          "title": "Region",
+          "type": "string"
+        },
+        "topic": {
+          "default": "",
+          "title": "Topic",
+          "type": "string"
+        },
+        "limit": {
+          "default": 10,
+          "title": "Limit",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "title": "search_resourcesArguments",
+      "type": "object"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "make_visit_plan",
+    "description": "구조화한 조건으로 같은 시설의 책·프로그램·공간 후보를 대조. 신청·예약하지 않음.\ndate=YYYY-MM-DD, start_time/end_time=HH:MM. 모의지역 DEMO, 주제 우주, 대상 가족.\n모르는 이용자 조건을 채우지 말고 먼저 물으세요. allow_unknown=true인 결과의 미확인 사항을 유지하세요.\n",
+    "inputSchema": {
+      "$defs": {
+        "PlanRequest": {
+          "additionalProperties": false,
+          "properties": {
+            "region": {
+              "maxLength": 80,
+              "minLength": 1,
+              "title": "Region",
+              "type": "string"
+            },
+            "date": {
+              "format": "date",
+              "title": "Date",
+              "type": "string"
+            },
+            "start_time": {
+              "title": "Start Time",
+              "type": "string"
+            },
+            "end_time": {
+              "title": "End Time",
+              "type": "string"
+            },
+            "topic": {
+              "maxLength": 40,
+              "minLength": 1,
+              "title": "Topic",
+              "type": "string"
+            },
+            "audience": {
+              "maxLength": 20,
+              "minLength": 1,
+              "title": "Audience",
+              "type": "string"
+            },
+            "group_size": {
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Group Size",
+              "type": "integer"
+            },
+            "space_minutes": {
+              "maximum": 240,
+              "minimum": 15,
+              "title": "Space Minutes",
+              "type": "integer"
+            },
+            "budget_krw": {
+              "maximum": 10000000,
+              "minimum": 0,
+              "title": "Budget Krw",
+              "type": "integer"
+            },
+            "needs": {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 8,
+              "title": "Needs",
+              "type": "array"
+            },
+            "allow_unknown": {
+              "default": false,
+              "title": "Allow Unknown",
+              "type": "boolean"
+            },
+            "limit": {
+              "default": 3,
+              "maximum": 5,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "region",
+            "date",
+            "start_time",
+            "end_time",
+            "topic",
+            "audience",
+            "group_size",
+            "space_minutes",
+            "budget_krw"
+          ],
+          "title": "PlanRequest",
+          "type": "object"
+        }
+      },
+      "properties": {
+        "request": {
+          "$ref": "#/$defs/PlanRequest"
+        }
+      },
+      "required": [
+        "request"
+      ],
+      "title": "make_visit_planArguments",
+      "type": "object"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "search_books_live",
+    "description": "별도 승인·서버 설정 후에만 정보나루 서지 검색. 기본은 disabled. 소장·예약 확인 아님.",
+    "inputSchema": {
+      "properties": {
+        "keyword": {
+          "title": "Keyword",
+          "type": "string"
+        },
+        "limit": {
+          "default": 3,
+          "title": "Limit",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "keyword"
+      ],
+      "title": "search_books_liveArguments",
+      "type": "object"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "find_holding_libraries_live",
+    "description": "별도 승인·설정 후 소장관 조회. 공식 지역번호를 확인하고 사용. 임의로 번호를 만들지 마세요.",
+    "inputSchema": {
+      "properties": {
+        "isbn13": {
+          "title": "Isbn13",
+          "type": "string"
+        },
+        "region_code": {
+          "title": "Region Code",
+          "type": "string"
+        },
+        "limit": {
+          "default": 5,
+          "title": "Limit",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "isbn13",
+        "region_code"
+      ],
+      "title": "find_holding_libraries_liveArguments",
+      "type": "object"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "check_book_status_live",
+    "description": "별도 승인·설정 후 소장·하루 전 대출 상태. 현재 상태·실제 예약을 보장하지 않음.",
+    "inputSchema": {
+      "properties": {
+        "isbn13": {
+          "title": "Isbn13",
+          "type": "string"
+        },
+        "library_code": {
+          "title": "Library Code",
+          "type": "string"
+        }
+      },
+      "required": [
+        "isbn13",
+        "library_code"
+      ],
+      "title": "check_book_status_liveArguments",
+      "type": "object"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  }
+]

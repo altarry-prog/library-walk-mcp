@@ -1,0 +1,16 @@
+{
+  "region": "DEMO",
+  "date": "2026-11-07",
+  "start_time": "13:00",
+  "end_time": "17:00",
+  "topic": "우주",
+  "audience": "가족",
+  "group_size": 4,
+  "space_minutes": 60,
+  "budget_krw": 20000,
+  "needs": [
+    "계단 없는 접근"
+  ],
+  "allow_unknown": false,
+  "limit": 3
+}

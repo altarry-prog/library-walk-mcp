@@ -1,0 +1,67 @@
+{
+  "scope": "구조화한 입력의 로컬 시험. 자연어 모델 시험이 아닙니다.",
+  "cases": {
+    "F01": {
+      "region": "DEMO",
+      "date": "2026-11-07",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "topic": "우주",
+      "audience": "가족",
+      "group_size": 4,
+      "space_minutes": 60,
+      "budget_krw": 20000,
+      "needs": [
+        "계단 없는 접근"
+      ],
+      "allow_unknown": false,
+      "limit": 3
+    },
+    "F02": {
+      "region": "DEMO",
+      "date": "2026-11-07",
+      "start_time": "14:00",
+      "end_time": "17:00",
+      "topic": "우주",
+      "audience": "가족",
+      "group_size": 4,
+      "space_minutes": 60,
+      "budget_krw": 20000,
+      "needs": [],
+      "allow_unknown": false,
+      "limit": 3
+    },
+    "F03": {
+      "region": "DEMO",
+      "date": "2026-11-07",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "topic": "우주",
+      "audience": "가족",
+      "group_size": 4,
+      "space_minutes": 60,
+      "budget_krw": 0,
+      "needs": [
+        "계단 없는 접근"
+      ],
+      "allow_unknown": true,
+      "limit": 3
+    },
+    "F04": {
+      "region": "DEMO",
+      "date": "2026-11-07",
+      "start_time": "13:00",
+      "end_time": "17:00",
+      "topic": "우주",
+      "audience": "가족",
+      "group_size": 7,
+      "space_minutes": 60,
+      "budget_krw": 20000,
+      "needs": [
+        "계단 없는 접근"
+      ],
+      "allow_unknown": false,
+      "limit": 3
+    }
+  }
+}

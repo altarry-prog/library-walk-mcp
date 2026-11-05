@@ -1,0 +1,10 @@
+{
+  "purpose": "조사·구현 상태표. 실행 가능한 연결 설정이나 승인 증명이 아닙니다.",
+  "checked_on": "2026-11-04",
+  "providers": [
+    {"id": "info_naru", "official_url": "https://data4library.kr/apiUtilization", "kinds": ["books"], "implementation": "optional_adapter_mock_response_tested", "live_verified": false, "default_enabled": false, "data_basis": "대출 상태는 조회일의 하루 전 기준", "approval_and_quota": "확인 필요"},
+    {"id": "bucheon_culture_csv", "official_url": "https://www.data.go.kr/data/3075878/fileData.do", "kinds": ["programs"], "implementation": "csv_converter_synthetic_rows_tested", "live_verified": false, "default_enabled": false, "documented_update_cycle": "연간", "documented_snapshot": "2026-09-09", "actual_file_imported": false, "missing_fields": ["회차별 시작·종료 시각", "남은 자리", "현재 접수 상태", "비용"], "license_metadata": "포털에 무료·이용허락범위 제한 없음으로 기재. 기관 승인과 별개"},
+    {"id": "national_event_standard", "official_url": "https://www.data.go.kr/data/15013106/standard.do", "kinds": ["programs"], "implementation": "not_implemented", "live_verified": false, "default_enabled": false, "limitation": "모든 도서관 프로그램 포함 여부 미확인. 객석수는 잔여석이 아님"},
+    {"id": "eshare", "official_url": "https://www.eshare.go.kr/OpenApi/Info/list.do", "kinds": ["spaces"], "implementation": "not_implemented", "live_verified": false, "default_enabled": false, "verified_slot_endpoint": null, "limitation": "자원정보 목록 확인. 공개 가능한 시간별 빈자리 명세·승인·도서관 포함 범위는 미확인"}
+  ]
+}

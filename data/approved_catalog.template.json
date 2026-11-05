@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "mode": "snapshot",
+  "basis_date": "2026-11-04",
+  "human_reviewed": false,
+  "coverage": {"label": "작성 필요: 실제 자료의 지역·기관 범위", "national_coverage": false},
+  "source_manifest": [],
+  "source_status": {"books": "not_configured", "programs": "not_configured", "spaces": "not_configured"},
+  "libraries": [],
+  "books": [],
+  "programs": [],
+  "spaces": []
+}

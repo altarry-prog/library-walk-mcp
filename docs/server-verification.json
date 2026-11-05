@@ -1,0 +1,40 @@
+{
+  "checked_at_kst": "2026-11-04T18:24:33+09:00",
+  "checks_passed": 26,
+  "checks": [
+    "streamable-http: health",
+    "streamable-http: 인증 없는 접근 거절",
+    "streamable-http: 틀린 인증 거절",
+    "streamable-http: 과대 요청 거절",
+    "streamable-http: 허용하지 않은 Host 거절",
+    "streamable-http: initialize",
+    "streamable-http: tools/list 6개",
+    "streamable-http: 읽기 전용 힌트",
+    "streamable-http: 모의 모드·실호출 꺼짐",
+    "streamable-http: 가상 계획 호출",
+    "streamable-http: 실호출 차단",
+    "streamable-http: 자료 검색",
+    "streamable-http: 인증값 로그 미출력",
+    "sse: health",
+    "sse: 인증 없는 접근 거절",
+    "sse: 틀린 인증 거절",
+    "sse: 과대 요청 거절",
+    "sse: 허용하지 않은 Host 거절",
+    "sse: initialize",
+    "sse: tools/list 6개",
+    "sse: 읽기 전용 힌트",
+    "sse: 모의 모드·실호출 꺼짐",
+    "sse: 가상 계획 호출",
+    "sse: 실호출 차단",
+    "sse: 자료 검색",
+    "sse: 인증값 로그 미출력"
+  ],
+  "scope": "로컬 루프백 HTTP/SSE, 합성자료, 실행 중 생성한 시험 인증값",
+  "not_verified": [
+    "FabriX 실제 연결",
+    "외부 HTTPS 배포",
+    "실제 데이터 API",
+    "기관·대회 승인",
+    "운영 환경 보안 인증"
+  ]
+}

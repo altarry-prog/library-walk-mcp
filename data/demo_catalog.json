@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "mode": "mock",
+  "basis_date": "2026-11-04",
+  "coverage": {
+    "label": "전부 허구인 가상 시범권역",
+    "region": "DEMO",
+    "national_coverage": false
+  },
+  "source_status": {
+    "books": "ok",
+    "programs": "ok",
+    "spaces": "ok"
+  },
+  "libraries": [
+    {
+      "id": "MOCK-LIB-A",
+      "name": "가상도서관 A",
+      "region": "DEMO",
+      "hours": {
+        "start": "09:00",
+        "end": "18:00"
+      },
+      "closed_dates": []
+    },
+    {
+      "id": "MOCK-LIB-B",
+      "name": "가상도서관 B",
+      "region": "DEMO",
+      "hours": {
+        "start": "09:00",
+        "end": "18:00"
+      },
+      "closed_dates": []
+    },
+    {
+      "id": "MOCK-LIB-C",
+      "name": "가상도서관 C",
+      "region": "DEMO",
+      "hours": {
+        "start": "09:00",
+        "end": "18:00"
+      },
+      "closed_dates": []
+    }
+  ],
+  "books": [
+    {
+      "id": "MOCK-BOOK-A",
+      "title": "가상도서 A: 우주 이야기",
+      "library_id": "MOCK-LIB-A",
+      "topics": [
+        "우주"
+      ],
+      "availability": {
+        "status": "previous_day_available",
+        "as_of": "2026-11-03"
+      },
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    },
+    {
+      "id": "MOCK-BOOK-B",
+      "title": "가상도서 B: 우주 이야기",
+      "library_id": "MOCK-LIB-B",
+      "topics": [
+        "우주"
+      ],
+      "availability": {
+        "status": "previous_day_available",
+        "as_of": "2026-11-03"
+      },
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    },
+    {
+      "id": "MOCK-BOOK-C",
+      "title": "가상도서 C: 우주 이야기",
+      "library_id": "MOCK-LIB-C",
+      "topics": [
+        "우주"
+      ],
+      "availability": {
+        "status": "unknown",
+        "as_of": "2026-11-03"
+      },
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    }
+  ],
+  "programs": [
+    {
+      "id": "MOCK-PROGRAM-A",
+      "title": "가상 프로그램 A: 우주 체험",
+      "library_id": "MOCK-LIB-A",
+      "topics": [
+        "우주"
+      ],
+      "audiences": [
+        "가족",
+        "아동"
+      ],
+      "date": "2026-11-07",
+      "start": "13:00",
+      "end": "14:00",
+      "registration_status": "open",
+      "remaining_seats": 6,
+      "capacity": 20,
+      "fee_per_person_krw": 0,
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    },
+    {
+      "id": "MOCK-PROGRAM-B",
+      "title": "가상 프로그램 B: 우주 체험",
+      "library_id": "MOCK-LIB-B",
+      "topics": [
+        "우주"
+      ],
+      "audiences": [
+        "가족",
+        "아동"
+      ],
+      "date": "2026-11-07",
+      "start": "14:00",
+      "end": "15:00",
+      "registration_status": "open",
+      "remaining_seats": 6,
+      "capacity": 20,
+      "fee_per_person_krw": 3000,
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    },
+    {
+      "id": "MOCK-PROGRAM-C",
+      "title": "가상 프로그램 C: 우주 체험",
+      "library_id": "MOCK-LIB-C",
+      "topics": [
+        "우주"
+      ],
+      "audiences": [
+        "가족",
+        "아동"
+      ],
+      "date": "2026-11-07",
+      "start": "15:00",
+      "end": "16:00",
+      "registration_status": "unknown",
+      "remaining_seats": null,
+      "capacity": 20,
+      "fee_per_person_krw": 0,
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "MOCK-SPACE-A",
+      "title": "가상 모임공간 A",
+      "library_id": "MOCK-LIB-A",
+      "capacity": 6,
+      "amenities": {
+        "계단 없는 접근": true,
+        "함께 대화 가능": true
+      },
+      "pricing_basis": "fixed_session",
+      "session_fee_krw": 5000,
+      "slots": [
+        {
+          "date": "2026-11-07",
+          "start": "14:00",
+          "end": "17:00",
+          "status": "available"
+        }
+      ],
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    },
+    {
+      "id": "MOCK-SPACE-B",
+      "title": "가상 모임공간 B",
+      "library_id": "MOCK-LIB-B",
+      "capacity": 4,
+      "amenities": {
+        "계단 없는 접근": false,
+        "함께 대화 가능": true
+      },
+      "pricing_basis": "fixed_session",
+      "session_fee_krw": 1000,
+      "slots": [
+        {
+          "date": "2026-11-07",
+          "start": "14:00",
+          "end": "17:00",
+          "status": "available"
+        }
+      ],
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    },
+    {
+      "id": "MOCK-SPACE-C",
+      "title": "가상 모임공간 C",
+      "library_id": "MOCK-LIB-C",
+      "capacity": null,
+      "amenities": {
+        "계단 없는 접근": null,
+        "함께 대화 가능": true
+      },
+      "pricing_basis": "fixed_session",
+      "session_fee_krw": null,
+      "slots": null,
+      "source": {
+        "kind": "synthetic",
+        "name": "직접 만든 가상 시험자료",
+        "source_url": null,
+        "as_of": "2026-11-04"
+      }
+    }
+  ]
+}

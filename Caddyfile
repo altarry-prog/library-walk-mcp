@@ -1,0 +1,6 @@
+{$PUBLIC_HOST} {
+    reverse_proxy agent:8000 {
+        flush_interval -1
+    }
+    # Access logs intentionally not enabled. Review your hosting provider's logging policy.
+}

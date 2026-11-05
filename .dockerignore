@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.venv
+.tmp
+__pycache__
+**/__pycache__
+*.log
+.git
+private

@@ -1,0 +1,288 @@
+{
+  "version": "0.2",
+  "checked_at_kst": "2026-11-04T18:24:33+09:00",
+  "status": "local_tested_fabrix_application_pending",
+  "unit_test_methods_passed": 50,
+  "local_protocol_checks_passed": 26,
+  "local_and_static_checks": [
+    "Python syntax",
+    "dependency annotated-types",
+    "dependency anyio",
+    "dependency attrs",
+    "dependency certifi",
+    "dependency cffi",
+    "dependency click",
+    "dependency cryptography",
+    "dependency h11",
+    "dependency httpcore",
+    "dependency httpx",
+    "dependency httpx-sse",
+    "dependency idna",
+    "dependency jsonschema",
+    "dependency jsonschema-specifications",
+    "dependency mcp",
+    "dependency pycparser",
+    "dependency pydantic",
+    "dependency pydantic-settings",
+    "dependency pydantic_core",
+    "dependency PyJWT",
+    "dependency python-dotenv",
+    "dependency python-multipart",
+    "dependency referencing",
+    "dependency rpds-py",
+    "dependency sse-starlette",
+    "dependency starlette",
+    "dependency typing-inspection",
+    "dependency typing_extensions",
+    "dependency tzdata",
+    "dependency uvicorn",
+    "unit tests",
+    "HTTP and SSE local protocol",
+    "tested source hashes unchanged",
+    "prompt names match actual tools",
+    "prompt example matches executable fixture",
+    "F02 changed conditions",
+    "F03 unknown fee not free",
+    "F04 no invented match",
+    "four UI examples",
+    "platform records remain unexecuted",
+    "unreviewed real-data template cannot activate",
+    "registry does not claim live verification",
+    "no credential assignments in example config",
+    "Docker runtime source files present",
+    "compose uses host credential reference",
+    "archive allowlist excludes credentials and environments",
+    "all deliverables exist"
+  ],
+  "source_hashes_at_test": {
+    "server.py": "a6ba022c376ea5f34935c60aca148baa9720f62077e7979aa1d796e65b6d11e6",
+    "planner.py": "c9bdcf5b5c4aa0e34cc2f50e1a18f889ea7ee415cb3865c89c83d5acd3894a4f",
+    "providers.py": "3a697c526c89a3bde2b5e9eadc0ffefdcab4a8e712ec7ca3cf755892e20ff71a",
+    "import_bucheon_csv.py": "bb629ec221f114570be15ec1d1ca827b339010aa746a8ce953cec4ba61aaee76",
+    "probe_mcp.py": "b5e7cb07a613a69f7dc6d814a6f65e3d62739bc5c5da075b054184981e51d662",
+    "make_demo_data.py": "c2cc3565b835c8f94bc37f06e62786be8f879f77decded3c8146c0a3090788df",
+    "verify_server.py": "2b592dbc28e1db61baecdda32529b2b7d39cff654a14ccbad752952f3d470e1b",
+    "verify_release.py": "eae5f1c531afcdf20a316d385a3195de021df979ac0d7a3534c6b7e80eacb70a",
+    "tests/test_core.py": "e97accecefdb342b03b0610494174b608bebf70e1c03fd5a0c908bebca92ac9d",
+    "tests/test_configuration.py": "313953d6afd579cdda7b1f5c3248113c0be24b62cdeb0e4a36b66b993f7c8b93",
+    "requirements.txt": "585707367b02fd9e6d788154fd4228c69c03b44b53017ca69e94e90e915b91b0",
+    "requirements.lock.txt": "d3eefda7a2e0e8b8956ba98ec4f56b1109062b94552ed366e2b071884952dd42",
+    "data/demo_catalog.json": "cda6d217f7160345029dc77e339ce134c896df8828b8cc1899ecab6516b3fac5",
+    "data/example_request.json": "2b1a0e93a5b43f54eadafb98e20d52fecf80280ba22527c4104ec92865f81457"
+  },
+  "reference_repository": {
+    "commit_short": "bb4da9b",
+    "commit_time_kst": "2026. 11. 4. 17:11",
+    "modified": false
+  },
+  "external_apis_called": false,
+  "fabrix_connected": false,
+  "public_https_deployed": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5509,
+      "sha256": "5b1d55d1080f65bf8f243788504d4cceb414b525e4ca757c0096ca0ffe6142bd"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 2009,
+      "sha256": "947ba7b6d09b59ad6e07d228d064e043a03e4addd1345ae110b183366c28cccb"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 728,
+      "sha256": "b02766819aac85d8b9768192e279dc3361280df6dbc5b6d8f1faf6a269a0275d"
+    },
+    {
+      "path": "server.py",
+      "bytes": 8653,
+      "sha256": "a6ba022c376ea5f34935c60aca148baa9720f62077e7979aa1d796e65b6d11e6"
+    },
+    {
+      "path": "planner.py",
+      "bytes": 14114,
+      "sha256": "c9bdcf5b5c4aa0e34cc2f50e1a18f889ea7ee415cb3865c89c83d5acd3894a4f"
+    },
+    {
+      "path": "providers.py",
+      "bytes": 8020,
+      "sha256": "3a697c526c89a3bde2b5e9eadc0ffefdcab4a8e712ec7ca3cf755892e20ff71a"
+    },
+    {
+      "path": "import_bucheon_csv.py",
+      "bytes": 4688,
+      "sha256": "bb629ec221f114570be15ec1d1ca827b339010aa746a8ce953cec4ba61aaee76"
+    },
+    {
+      "path": "make_demo_data.py",
+      "bytes": 2846,
+      "sha256": "c2cc3565b835c8f94bc37f06e62786be8f879f77decded3c8146c0a3090788df"
+    },
+    {
+      "path": "verify_server.py",
+      "bytes": 6697,
+      "sha256": "2b592dbc28e1db61baecdda32529b2b7d39cff654a14ccbad752952f3d470e1b"
+    },
+    {
+      "path": "probe_mcp.py",
+      "bytes": 3185,
+      "sha256": "b5e7cb07a613a69f7dc6d814a6f65e3d62739bc5c5da075b054184981e51d662"
+    },
+    {
+      "path": "verify_release.py",
+      "bytes": 11559,
+      "sha256": "eae5f1c531afcdf20a316d385a3195de021df979ac0d7a3534c6b7e80eacb70a"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 78,
+      "sha256": "585707367b02fd9e6d788154fd4228c69c03b44b53017ca69e94e90e915b91b0"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "bytes": 554,
+      "sha256": "d3eefda7a2e0e8b8956ba98ec4f56b1109062b94552ed366e2b071884952dd42"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 311,
+      "sha256": "d33ce08dcc535cb7b9111714aad20870bc682ada4ed87fe95843aa1778f3491b"
+    },
+    {
+      "path": "compose.yaml",
+      "bytes": 1169,
+      "sha256": "0b6af426cac5ba131852c12544dbce60cfcdf3cbac41818e4ef2f01bcffcddaf"
+    },
+    {
+      "path": "Caddyfile",
+      "bytes": 174,
+      "sha256": "8065b3f6ac4e10a571ae9702e94cb99c104872abea18aaab2b3e9cd584e4e848"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 702,
+      "sha256": "6a2eb85258f1c156bbf7f553476790110d2f74613a9780dc6b5e2ecaaefc5f92"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 73,
+      "sha256": "edc53f8ad46b5e41905ad7cac2f1332d3f59968ff4c2b027c8819beb72e64f43"
+    },
+    {
+      "path": ".dockerignore",
+      "bytes": 83,
+      "sha256": "1341b4051049016e97db8a2f498446e628e1b1475d4fb677d5ef1455a5afcef3"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 10811,
+      "sha256": "e97accecefdb342b03b0610494174b608bebf70e1c03fd5a0c908bebca92ac9d"
+    },
+    {
+      "path": "tests/test_configuration.py",
+      "bytes": 5880,
+      "sha256": "313953d6afd579cdda7b1f5c3248113c0be24b62cdeb0e4a36b66b993f7c8b93"
+    },
+    {
+      "path": "data/demo_catalog.json",
+      "bytes": 5861,
+      "sha256": "cda6d217f7160345029dc77e339ce134c896df8828b8cc1899ecab6516b3fac5"
+    },
+    {
+      "path": "data/example_request.json",
+      "bytes": 290,
+      "sha256": "2b1a0e93a5b43f54eadafb98e20d52fecf80280ba22527c4104ec92865f81457"
+    },
+    {
+      "path": "data/approved_catalog.template.json",
+      "bytes": 414,
+      "sha256": "195086394114a9bad9bad71768913c882bd5d24757ba1f5caa9ba6cf1e5a354a"
+    },
+    {
+      "path": "data/library_map.template.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "data/provider_registry.json",
+      "bytes": 1719,
+      "sha256": "35529792b4158ddee31e8247f10993c4e4328e96646d50b4c11471a532a80cf4"
+    },
+    {
+      "path": "docs/01_FabriX_연결안내.md",
+      "bytes": 9222,
+      "sha256": "894536140ef30755d68e2d394ba04064df830ced560263793146353be14663f5"
+    },
+    {
+      "path": "docs/02_Agent_기본정보.md",
+      "bytes": 2901,
+      "sha256": "9560a3b427ba96818bad2e121e5e7a9b317d36a7eecdf4ad66f890332ea02a2c"
+    },
+    {
+      "path": "docs/03_Custom_지시문.txt",
+      "bytes": 7149,
+      "sha256": "deecdcca8d3a2619f300dcfb32a556998e086a816b62c7f336afce1a973f31be"
+    },
+    {
+      "path": "docs/04_시범판_실행과제출.md",
+      "bytes": 6845,
+      "sha256": "adbe7f1f7cc36cb8aa3e994f2ac14e72bf85f8810d2990c3a2932c6246b7c527"
+    },
+    {
+      "path": "docs/05_전국확장_상세설계.md",
+      "bytes": 11401,
+      "sha256": "b459dab9d95781497c65f05e845b035f1ef9f149071e8db99c4924fb2c938dbc"
+    },
+    {
+      "path": "docs/06_자료확보와승인.md",
+      "bytes": 6424,
+      "sha256": "267df990b9055672ef2edca5895dd01cced09d83ade929c7c111343d8ce98081"
+    },
+    {
+      "path": "docs/07_변경내역.md",
+      "bytes": 3070,
+      "sha256": "5051ead008a946703555e99d8b0e3d6e11e22f9161a87142f438eaea9164c148"
+    },
+    {
+      "path": "docs/공개자료_확인메모.md",
+      "bytes": 5133,
+      "sha256": "e26846c671d8504a411fec06ca75b652840cdeef3f6d5d34fe15671adc004c9c"
+    },
+    {
+      "path": "docs/플랫폼시험기록_빈양식.csv",
+      "bytes": 459,
+      "sha256": "a040e2eab6dc3cd4d286bf1ecff46abce361fdd52bf9686a87aa1ea8aafa8c6d"
+    },
+    {
+      "path": "docs/test_core_current.log",
+      "bytes": 5226,
+      "sha256": "7a5a77ecbaa38892daa4bc8fff5a5e6ac1c1574d4660ae952d98373ae4ebdf35"
+    },
+    {
+      "path": "docs/test_mcp_current.log",
+      "bytes": 983,
+      "sha256": "fc7d491ddfedc6c4385bbc3a44e1049c45654b40936a6db12f7e280b346f9992"
+    },
+    {
+      "path": "docs/server-verification.json",
+      "bytes": 1360,
+      "sha256": "60a08e971e7469898319e32bd517feacc2aa4749ae9b208ff00fd7c5451b69ac"
+    },
+    {
+      "path": "docs/mcp_tools_observed.json",
+      "bytes": 6552,
+      "sha256": "b68c3172516ab87a998f18470966b0374833993022a3b2ad3d32d1b45e5df64d"
+    },
+    {
+      "path": "docs/실제_MCP_모의응답.json",
+      "bytes": 3415,
+      "sha256": "743530e6c16b596e98274725dc0c694a0f6812b34ca5aaeddb023e499aba8738"
+    },
+    {
+      "path": "docs/구조화입력_시험.json",
+      "bytes": 1517,
+      "sha256": "a992c6e0dd9f849894321378c2db4dd634cee9af14e90e2d28cfc9749ab3c25c"
+    }
+  ]
+}

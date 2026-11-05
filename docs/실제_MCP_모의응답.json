@@ -1,0 +1,112 @@
+{
+  "mode": "mock",
+  "synthetic": true,
+  "coverage": {
+    "label": "전부 허구인 가상 시범권역",
+    "region": "DEMO",
+    "national_coverage": false
+  },
+  "data_basis_date": "2026-11-04",
+  "notice": "시연·업무지원용입니다. 공식 서비스가 아니며 실제 신청·예약은 없습니다.",
+  "booking_performed": false,
+  "live_api_called": false,
+  "request": {
+    "region": "DEMO",
+    "date": "2026-11-07",
+    "start_time": "13:00",
+    "end_time": "17:00",
+    "topic": "우주",
+    "audience": "가족",
+    "group_size": 4,
+    "space_minutes": 60,
+    "budget_krw": 20000,
+    "needs": [
+      "계단 없는 접근"
+    ],
+    "allow_unknown": false,
+    "limit": 3
+  },
+  "plans": [
+    {
+      "library": {
+        "id": "MOCK-LIB-A",
+        "name": "가상도서관 A"
+      },
+      "book": {
+        "id": "MOCK-BOOK-A",
+        "title": "가상도서 A: 우주 이야기",
+        "library_id": "MOCK-LIB-A",
+        "topics": [
+          "우주"
+        ],
+        "availability": {
+          "status": "previous_day_available",
+          "as_of": "2026-11-03"
+        },
+        "source": {
+          "kind": "synthetic",
+          "name": "직접 만든 가상 시험자료",
+          "source_url": null,
+          "as_of": "2026-11-04"
+        }
+      },
+      "program": {
+        "id": "MOCK-PROGRAM-A",
+        "title": "가상 프로그램 A: 우주 체험",
+        "library_id": "MOCK-LIB-A",
+        "topics": [
+          "우주"
+        ],
+        "audiences": [
+          "가족",
+          "아동"
+        ],
+        "date": "2026-11-07",
+        "start": "13:00",
+        "end": "14:00",
+        "registration_status": "open",
+        "remaining_seats": 6,
+        "capacity": 20,
+        "fee_per_person_krw": 0,
+        "source": {
+          "kind": "synthetic",
+          "name": "직접 만든 가상 시험자료",
+          "source_url": null,
+          "as_of": "2026-11-04"
+        }
+      },
+      "space": {
+        "id": "MOCK-SPACE-A",
+        "title": "가상 모임공간 A",
+        "source": {
+          "kind": "synthetic",
+          "name": "직접 만든 가상 시험자료",
+          "source_url": null,
+          "as_of": "2026-11-04"
+        },
+        "proposed_start": "14:00",
+        "proposed_end": "15:00",
+        "slot_evidence": "available"
+      },
+      "known_fee_krw": 5000,
+      "total_fee_krw": 5000,
+      "budget_confirmed_from_data": true,
+      "condition_status": "matches_catalog_conditions",
+      "pending_checks": [],
+      "warnings": [
+        "같은 시설 안의 프로그램 후 공간 이용만 대조했습니다. 이동시간은 계산하지 않았습니다.",
+        "도서 상태는 하루 전 기준 자료이며 현재 이용 가능 여부와 실제 신청·예약은 별도 확인해야 합니다.",
+        "세부 연령·거주지·회원·예약자격은 자동으로 확인하지 않았습니다."
+      ],
+      "synthetic": true
+    }
+  ],
+  "ranking": "미확인 조건이 적은 순, 확인된 비용이 낮은 순, 시작 시각순. 성공확률 점수가 아닙니다.",
+  "candidate_count": 1,
+  "status": "candidates_found",
+  "exclusion_summary": {
+    "필요한 시설 조건 불충족": 1,
+    "필수 조건 미확인 후보 제외": 1
+  },
+  "message": "등록된 자료 범위의 후보입니다. 전국 조회 완료나 예약 가능 확정이 아닙니다."
+}
