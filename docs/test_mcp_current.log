@@ -1,0 +1,27 @@
+PASS streamable-http: health
+PASS streamable-http: 인증 없는 접근 거절
+PASS streamable-http: 틀린 인증 거절
+PASS streamable-http: 과대 요청 거절
+PASS streamable-http: 허용하지 않은 Host 거절
+PASS streamable-http: initialize
+PASS streamable-http: tools/list 6개
+PASS streamable-http: 읽기 전용 힌트
+PASS streamable-http: 모의 모드·실호출 꺼짐
+PASS streamable-http: 가상 계획 호출
+PASS streamable-http: 실호출 차단
+PASS streamable-http: 자료 검색
+PASS streamable-http: 인증값 로그 미출력
+PASS sse: health
+PASS sse: 인증 없는 접근 거절
+PASS sse: 틀린 인증 거절
+PASS sse: 과대 요청 거절
+PASS sse: 허용하지 않은 Host 거절
+PASS sse: initialize
+PASS sse: tools/list 6개
+PASS sse: 읽기 전용 힌트
+PASS sse: 모의 모드·실호출 꺼짐
+PASS sse: 가상 계획 호출
+PASS sse: 실호출 차단
+PASS sse: 자료 검색
+PASS sse: 인증값 로그 미출력
+LOCAL_MCP_VERIFICATION_PASS 26

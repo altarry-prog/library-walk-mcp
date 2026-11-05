@@ -1,0 +1,55 @@
+test_bad_provider_payload_handled (test_configuration.ConfigurationTests.test_bad_provider_payload_handled) ... ok
+test_bad_transport_rejected (test_configuration.ConfigurationTests.test_bad_transport_rejected) ... ok
+test_blank_or_wildcard_hosts_rejected (test_configuration.ConfigurationTests.test_blank_or_wildcard_hosts_rejected) ... ok
+test_catalog_outside_data_rejected (test_configuration.ConfigurationTests.test_catalog_outside_data_rejected) ... ok
+test_invalid_rate_rejected (test_configuration.ConfigurationTests.test_invalid_rate_rejected) ... ok
+test_korean_timezone_without_system_timezone_files (test_configuration.ConfigurationTests.test_korean_timezone_without_system_timezone_files) ... ok
+test_local_configuration_builds (test_configuration.ConfigurationTests.test_local_configuration_builds) ... ok
+test_missing_weak_or_nonascii_token_rejected (test_configuration.ConfigurationTests.test_missing_weak_or_nonascii_token_rejected) ... ok
+test_mock_and_live_cannot_mix (test_configuration.ConfigurationTests.test_mock_and_live_cannot_mix) ... ok
+test_naru_key_from_environment_only (test_configuration.ConfigurationTests.test_naru_key_from_environment_only) ... ok
+test_probe_url_does_not_allow_secret_query_or_plain_http (test_configuration.ConfigurationTests.test_probe_url_does_not_allow_secret_query_or_plain_http) ... ok
+test_unreviewed_snapshot_rejected (test_configuration.ConfigurationTests.test_unreviewed_snapshot_rejected) ... ok
+test_rate_limit_and_health_bypass (test_configuration.MiddlewareTests.test_rate_limit_and_health_bypass) ... ok
+test_unauthorized_does_not_consume_authorized_quota (test_configuration.MiddlewareTests.test_unauthorized_does_not_consume_authorized_quota) ... ok
+test_bad_columns_rejected (test_core.ImportTests.test_bad_columns_rejected) ... ok
+test_bad_dates_rejected (test_core.ImportTests.test_bad_dates_rejected) ... ok
+test_csv_does_not_invent_times_vacancies_or_daily_sessions (test_core.ImportTests.test_csv_does_not_invent_times_vacancies_or_daily_sessions) ... ok
+test_one_day_still_no_time_invention (test_core.ImportTests.test_one_day_still_no_time_invention) ... ok
+test_both_approval_gates_needed (test_core.NaruTests.test_both_approval_gates_needed) ... ok
+test_cache_and_process_cap (test_core.NaruTests.test_cache_and_process_cap) ... ok
+test_disabled_by_default (test_core.NaruTests.test_disabled_by_default) ... ok
+test_error_does_not_expose_key (test_core.NaruTests.test_error_does_not_expose_key) ... ok
+test_holdings_normalization (test_core.NaruTests.test_holdings_normalization) ... ok
+test_invalid_parameters_before_network (test_core.NaruTests.test_invalid_parameters_before_network) ... ok
+test_no_redirect_following (test_core.NaruTests.test_no_redirect_following) ... ok
+test_search_whitelist_no_key_leak (test_core.NaruTests.test_search_whitelist_no_key_leak) ... ok
+test_status_is_previous_day (test_core.NaruTests.test_status_is_previous_day) ... ok
+test_amenity_false_excluded (test_core.PlannerTests.test_amenity_false_excluded) ... ok
+test_base_matches_same_facility_without_booking (test_core.PlannerTests.test_base_matches_same_facility_without_booking) ... ok
+test_budget_hard_limit (test_core.PlannerTests.test_budget_hard_limit) ... ok
+test_capacity_change_excludes_small_space (test_core.PlannerTests.test_capacity_change_excludes_small_space) ... ok
+test_capacity_is_not_remaining_seats (test_core.PlannerTests.test_capacity_is_not_remaining_seats) ... ok
+test_closed_program_excluded (test_core.PlannerTests.test_closed_program_excluded) ... ok
+test_closed_slot_excluded (test_core.PlannerTests.test_closed_slot_excluded) ... ok
+test_date_range_not_daily_occurrence (test_core.PlannerTests.test_date_range_not_daily_occurrence) ... ok
+test_empty_slots_not_unknown (test_core.PlannerTests.test_empty_slots_not_unknown) ... ok
+test_hours_and_closure (test_core.PlannerTests.test_hours_and_closure) ... ok
+test_input_validation (test_core.PlannerTests.test_input_validation) ... ok
+test_missing_program_time_not_invented (test_core.PlannerTests.test_missing_program_time_not_invented) ... ok
+test_no_network_from_planner (test_core.PlannerTests.test_no_network_from_planner) ... ok
+test_not_enough_continuous_time (test_core.PlannerTests.test_not_enough_continuous_time) ... ok
+test_past_date (test_core.PlannerTests.test_past_date) ... ok
+test_previous_day_not_current (test_core.PlannerTests.test_previous_day_not_current) ... ok
+test_program_remaining_seats (test_core.PlannerTests.test_program_remaining_seats) ... ok
+test_provider_failure_not_empty_result (test_core.PlannerTests.test_provider_failure_not_empty_result) ... ok
+test_time_window_changes_results (test_core.PlannerTests.test_time_window_changes_results) ... ok
+test_topic_changes_results (test_core.PlannerTests.test_topic_changes_results) ... ok
+test_unknown_cost_not_free (test_core.PlannerTests.test_unknown_cost_not_free) ... ok
+test_unknown_fields_kept_not_promised (test_core.PlannerTests.test_unknown_fields_kept_not_promised) ... ok
+test_unknown_region_is_not_national_fallback (test_core.PlannerTests.test_unknown_region_is_not_national_fallback) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.049s
+
+OK
